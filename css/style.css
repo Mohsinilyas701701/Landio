@@ -13,7 +13,7 @@ html {
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     --primary: #00C5F4;
-    --secondary: #000000;
+    --secondary: #171717;
     --text: #ffffff;
 }
 
@@ -25,6 +25,12 @@ h2{
 
 h5{
     font-size: 2.4rem;
+    text-align: start;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 2.2rem;
     text-align: center;
     font-weight: 700;
 }
@@ -142,10 +148,11 @@ span {
 .card-body .card-title{
     font-size: 2rem;
     font-weight: 700;
+    margin-bottom: 13px;
 }
 
 .card-body .card-text{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-align: start;
     line-height: 2rem;
 }
@@ -169,13 +176,15 @@ span {
     border: 1px solid #D2D2D2;
 }
 .accordion-button{
-    font-size: 1.6rem;
+    font-size: 2.5rem;
+    color: var(--secondary);
     background: var(--text);
     font-size: 500;
 }
 
 .accordion-body{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
 }
 
 .accordion-button:not(.collapsed){
@@ -196,15 +205,65 @@ span {
     color: var(--text);
 }
 
+.under-line{
+    width: 50%;
+    color: var(--text);
+}
+
+.contact_line{
+    width: 40px;
+    color: var(--text);
+}
+
+.footer p{
+    font-size: 1.5rem;
+}
+
 .footer .nav-link {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: var(--text);
+    display: inline-block;
 }
 
 .footer .nav-link:hover {
     background-color: rgba(0, 0, 0, 0.8);
     color: var(--text);
+}
+
+hr{
+    border: 1px solid #ffffff;
+}
+
+/* Idea-Section */
+
+.idea-section{
+    background-color: #56a4b8;
+    color: var(--text);
+}
+
+.idea-cards{
+    background: linear-gradient(180deg, #00C5F4 0%, #008EF4 100%);
+    padding: 20px 0;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px 3px rgba(107, 104, 104, 0.5);
+
+}
+
+.idea-cards .card-body{
+    padding: 20px 20px;
+
+}
+
+.idea-cards .card-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.idea-cards .card-text{
+    font-size: 1.4rem;
+    text-align: start;
+    line-height: 2rem;
 }
 
 @media (min-width: 0px) and (max-width:767px) {
@@ -232,6 +291,27 @@ span {
 
     .header-content p {
         font-size: 1.2rem;
+    }
+
+    .accordion-button{
+        font-size: 2rem;
+        color: var(--secondary);
+        background: var(--text);
+        font-size: 500;
+    }
+    
+    .accordion-body{
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    .under-line{
+       display: none;
+    }
+    
+    .contact_line{
+        display: none;
+
     }
 
 }
