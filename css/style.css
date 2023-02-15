@@ -305,13 +305,16 @@ hr{
         margin-bottom: 20px;
     }
 
+    .accordion-button:not(.collapsed)::after {
+        padding: 0 33px;
+    }
+
     .under-line{
        display: none;
     }
     
     .contact_line{
-        display: none;
-
+        display: none
     }
 
 }
