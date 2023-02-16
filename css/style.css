@@ -63,7 +63,6 @@ p{
     padding-left: 12px;
     padding-bottom: 8px;
     border-radius: 0 0 4px 4px;
-
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
@@ -77,33 +76,13 @@ p{
 }
 
 .web_button {
-    --border-width: 2px;
-    --border-radius: 10px;
-    background: linear-gradient(180deg, #00C5F4 0%, #008EF4 100%);
-    border: 0;
+    border: 2px solid #00C5F4;
+    background: #ffffff;
     position: relative;
     padding: 10px 30px;
-    color: black;
+    color: #00C5F4;
     font-weight: 700;
     font-size: 1.4rem;
-    max-width: 150px;
-    border-radius: var(--border-radius);
-    z-index: 10;
-}
-
-.web_button::before{
-    content: '';
-    display: block;
-    height: calc(100% - calc(var(--border-width) *2));
-    width: calc(100% - calc(var(--border-width) *2));
-    background: #ffffff;
-    position: absolute;
-    top: var(--border-width);
-    left: var(--border-width);
-    border-radius: calc(var(--border-radius) - var(--border-width));
-    z-index: -10;
-
-
 }
 
 .web_button1 {
@@ -113,7 +92,7 @@ p{
     color: var(--text);
     font-weight: 700;
     font-size: 1.4rem;
-    max-width: 150px;
+    min-width: 110px;
 }
 
 .web_button:hover {
@@ -209,19 +188,22 @@ span {
 }
 
 .apply_now{
+    
+    position: relative;
+    padding: 10px 30px;
+    color: black;
+    font-weight: 700;
+    font-size: 1.4rem;
+    max-width: 150px;
     background-color: var(--text);
-    color: var(--secondary);
     border: none;
 }
 
 /* Accordian Section - Section 4 */
 
-.accordion-item{
-   
-}
 .accordion-button{
     border: 1px solid #D2D2D2;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--secondary);
     background: var(--text);
     font-size: 500;
@@ -230,7 +212,7 @@ span {
 }
 
 .accordion-body{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 40px 20px;
 }
 
@@ -251,12 +233,21 @@ span {
     background-color: rgba(0, 0, 0, 0.8);
     color: var(--text);
     margin: 20px;
-    border-radius: 8px;
+    border-radius: 20px;
+}
+
+.footer .navbar-nav .nav-link {
+    font-size: 1.4rem;
+    padding: 4px 0;
+}
+
+.footer .navbar-nav .nav-link:hover {
+    color: var(--text);
+    background: none;
 }
 
 .under-line{
     width: 20px;
-    margin: 4px 10px;
     color: var(--text);
 }
 
@@ -288,7 +279,8 @@ hr{
 /* Idea-Section */
 
 .idea-section{
-    background-color: #56a4b8;
+
+    background: linear-gradient(180deg, #00C5F4 0%, #008EF4 100%);
     color: var(--text);
 }
 
@@ -318,20 +310,31 @@ hr{
 
 @media (min-width: 0px) and (max-width:767px) {
 
-    .navbar-brand{
-        margin-left: 30px;
+    .navbar .navbar-brand{
+        padding: 10px 0;
+        margin-left: 0;
+    }
+    .nav-link {
+        padding: 0;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    
+    .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+        background: none;
+        color: #000;
     }
 
     .web_button {
-        width: 150px;
+        min-width: 110px;
     }
 
     .blur_area {
-        top: 75%;
+        top: 65%;
     }
 
     .header-content {
-        top: 75%;
+        top: 65%;
     }
 
     .header-content h1 {
@@ -371,20 +374,31 @@ hr{
 
 @media (min-width: 768px) and (max-width:992px) {
 
-    .navbar-brand{
-        margin-left: 30px;
+    .navbar .navbar-brand{
+        padding: 10px 0;
+        margin-left: 0;
+    }
+    .nav-link {
+        padding: 0;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    
+    .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+        background: none;
+        color: #000;
     }
 
     .web_button {
-        width: 150px;
+        min-width: 110px;
     }
 
     .blur_area {
-        top: 75%;
+        top: 65%;
     }
 
     .header-content {
-        top: 75%;
+        top: 65%;
     }
 
     .header-content h1 {
